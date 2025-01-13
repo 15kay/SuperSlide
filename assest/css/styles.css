@@ -1,0 +1,931 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background:#fff;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 5px; /* Space between logo and text */
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: black;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgb(0, 0, 0); /* Subtle shadow for depth */ 
+position: fixed;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 0;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar .links a:hover {
+  color: #1d0a2e;
+}
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.links li {
+  position: relative;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.links a:hover, .links a.highlighted {
+  border-bottom: 2px solid #1a347e;
+}
+.navbar .buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+
+.navbar .buttons .signup:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hero h2 p{
+    padding-right: 250px;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  background: linear-gradient(to top, #011d42 23%, #004aad 95%);
+
+}
+
+.hero-section .hero {
+  max-width: 70%;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #c9c7c7;
+}
+
+.hero-section .img img {
+  width: 417px;
+  border: none; /* No border */
+  border-radius: 8px; /* Optional: Rounded corners, even without a border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */ 
+}
+
+.hero-section .buttons {
+  margin-top: 40px;
+}
+
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.buttons .join {
+    border-radius: 0.375rem;
+  border: 1px solid #fff;
+}
+
+.hero-section .buttons .learn {
+  border: 1px solid #fff;
+  border-radius: 0.375rem;
+}
+
+.hero-section .buttons a:hover {
+  background-color: #0158ca;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.image {
+  flex: 1;
+  padding: 20px;
+  margin-top: 40px;
+}
+.image1 {
+  flex: 1;
+  padding: 20px;
+ 
+}
+.article {
+  flex: 2;
+  padding: 20px;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+a {
+  color: #1C274C;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pricing row container */
+.pricing-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Pricing card styling */
+.pricing-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+/* Hover effect for pricing cards */
+.pricing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card heading */
+.pricing-card h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Price styling */
+.pricing-card .price {
+  font-size: 2em;
+  color: #16a085;
+  margin: 15px 0;
+}
+
+/* Image styling */
+.pricing-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Feature list */
+.pricing-card .features {
+  list-style: none;
+  text-align: left;
+ 
+}
+/* Button styling */
+.pricing-card .buy-now {
+  background-color: #1C274C;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card .buy-now:hover {
+  background-color: #2a3d7a;
+}
+
+/* Footer Container */
+.footer {
+  background-color: #0f131e; /* Dark background for contrast */
+  color: #f1eded; /* White text for readability */
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+.footer .container {
+  width: 90%; /* Use most of the screen */
+  max-width: 1400px; /* Ensure it doesn't stretch too much on very large screens */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Footer Top Section */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Footer Brand Section */
+.footer-brand {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.footer-logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #bbb;
+}
+
+.footer-logo .span {
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-top: 15px;
+}
+
+.email-field {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1em;
+}
+
+.btne {
+  background-color: #f1c40f;
+  color: #222;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.btne:hover {
+  background-color: #ffeb3b;
+}
+
+/* Footer Link Sections */
+.footer-link-box {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-list {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-list-title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-link {
+  display: block;
+  margin: 8px 0;
+  color: #ccc;
+  position: relative;
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+.footer-link:hover {
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-link::before {
+  content: "» ";
+  color: #f1c40f;
+  position: absolute;
+  left: -15px;
+  opacity: 0;
+  transition: opacity 0.3s, left 0.3s;
+}
+
+.footer-link:hover::before {
+  opacity: 1;
+  left: -20px;
+}
+
+/* Blog Cards Section */
+.blog-card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.card-banner {
+  flex-shrink: 0;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1em;
+  margin: 0;
+}
+
+.card-date {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #aaa;
+  gap: 5px;
+}
+
+/* Footer Contact Section */
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.contact-link {
+  color: #ddd;
+  font-size: 0.95em;
+}
+.footer-list{
+  list-style: none;
+}
+/* Footer Bottom Section */
+.footer-bottom {
+
+  border-top: 1px solid #444;
+ width: 100%;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.copyright-link {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-link-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-list {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  order: 1;
+}
+
+
+/* Vision - Mission - Vlaues */
+
+.vi_sec_min-section .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch; /* Ensures all cards stretch to the same height */
+  gap: 20px; /* Adds spacing between the cards */
+  margin: 0 auto;
+ 
+}
+
+.card {
+  background: #fff; /* Card background */
+  border: 1px solid #080808; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.689); /* Subtle shadow */
+  padding: 30px;
+  flex: 1; /* Ensures all cards take up equal space */
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+  justify-content: space-between; /* Distributes content evenly */
+  text-align: center; /* Center-align text */
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 10px; /* Smooth hover effect */
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #101010; /* Accent color for headings */
+  margin: 10px 0 15px; /* Space around heading */
+  text-transform: uppercase; /* Make text uppercase for style */
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #060606; /* Dark gray text */
+  flex-grow: 1;
+   /* Ensures paragraph expands to balance height */
+}
+
+.card i {
+  color: #1C274C; /* Accent color for icons */
+  margin-bottom: 15px; /* Space between icon and heading */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift card slightly on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vi_sec_min-section .container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center;
+  }
+
+  .card {
+      width: 90%; /* Reduce width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: #175d69;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .header .buttons {
+    display: none;
+  }
+
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+}
+.close-btn{
+  display: none;
+}
+/* Main Container Styling */
+.fullwidth-block {
+  background: linear-gradient(to bottom, #004aad 23%, #004aad 95%);
+  /* Dark background */
+  color: #fff; /* White text color */
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Section Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact Details Section */
+.contact-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Map Styling */
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+/* Contact Info Styling */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.contact-info address img {
+  margin-right: 10px;
+  width: 24px;
+}
+
+.contact-info a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #0056b3;
+}
+
+.contact-info a img {
+  margin-right: 10px;
+  width: 24px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  flex: 1;
+  border-color: 4px #fff;/* Slightly lighter dark background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.contact-form .section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* Input Field Styling */
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+ 
+  color: #fff;
+  font-size: 14px;
+  resize: none;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+  border-color: #0078ff;
+  outline: none;
+}
+
+
+.close-btn{
+  display: none;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .contact-details,
+  .contact-form {
+      margin-bottom: 20px;
+  }
+
+  .contact-details {
+      margin-right: 0;
+  }
+}
+
+
+/* RESPONSIVE  */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+ 
+}
+
+header .logo-img {
+  max-width: 120px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  display: none;
+  cursor: pointer;
+  color: rgb(3, 3, 31);
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.links li {
+  margin: 0 10px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 1.8rem;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Header */
+  header .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hamburger-btn {
+    display: block;
+    margin-left: auto;
+    margin-top: -40px;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #d2d2d2;
+    padding: 10px 0;
+    margin-top: -30px;
+  }
+  .close-btn{
+    display: block;
+  }
+  .footer-list-item {
+    display: none;
+  }
+  
+
+  #menu-toggle:checked + #hamburger-btn + .links {
+    display: flex;
+  }
+
+  .links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 30px 15px;
+    height: auto;
+  }
+  .header{
+    height: 45px;
+  }
+  .logo-img{
+    width: 100%;
+    height: 25px;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+.footer-list-item li{
+
+}
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+
+  /* Cards and Containers */
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .pricing-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-link-box {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-section p {
+    font-size: 0.8rem;
+  }
+
+  .footer-list-title {
+    font-size: 0.9rem;
+  }
+}
+

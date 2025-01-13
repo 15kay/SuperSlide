@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css\styles.css" />
+    <link rel="shortcut icon" href="img\icon.svg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #252525, #949494);
+            color: #fff;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .contact-form {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #000;
+            max-width: 600px;
+            
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #2247ac;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #1a347e;
+        }
+
+        .map {
+            flex: 1 1 500px;
+            max-width: 500px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .other-ways {
+            background: #fff;
+            color: #000;
+            
+            padding: 30px;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+
+        .other-ways div {
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .other-ways h3 {
+            margin-bottom: 10px;
+        }
+
+        .other-ways div p {
+            margin: 5px 0;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #2247ac;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #1a347e;
+        }
+
+        .social-icons a i {
+            font-size: 24px;
+            
+        }
+        
+
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <header class="header">
+          <nav class="navbar">
+            <p class="logo">
+              <img src="img\logo.svg" alt="Superslide Logo" class="logo-img" />
+            </p>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" id="hamburger-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </label>
+            <ul class="links">
+              <li><a href="../index.html" >Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="../index.html">Services</a></li>
+              <li><a href="contact.html" class="highlighted">Contact Us</a></li>
+              <label for="menu-toggle" class="close-btn" >X</label>
+            </ul>
+          </nav>
+        </header>
+        
+  </section>
+    <div class=".contact-container" style="margin-top: 100px;">
+        <h1>Contact Us</h1>
+        <div class="form-container">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <p style="color: #000;">Have questions or need assistance? Reach out to us using the form below, and we’ll get back to you as soon as possible.</p>
+                <form action="#" method="POST">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="   Email Address" required>
+
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22741.634713285177!2d29.16172989284461!3d-25.84364783605751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eea92c2c0261325%3A0x4bb164622cdea93e!2sKlarinet%2C%20eMalahleni!5e1!3m2!1sen!2sza!4v1736596515756!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+            </div>
+        </div>
+
+        <div class="other-ways">
+            <div>
+                <h3>Our Office</h3>
+                <p>SuperSlide Energy Group</p>
+                <p>Emalahleni</p>
+                <p>508 klarinet </p>
+                <p>1035</p>
+            </div>
+            <div>
+                <h3>Email Us</h3>
+                <p>info@superslide.co.za</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+
+
+        <footer class="footer has-bg-image" style="background-image: url('./img/footer-bg.png')">
+          <div class="container">
+      
+            <div class="footer-top">
+      
+              <div class="footer-brand">
+      
+                <a href="index.html" class="footer-logo">
+                  Superslide Energy Group
+                  <span class="span">Petrol and Diesel</span>
+                  
+                </a>
+      
+                
+              </div>
+              <div class="footer-link-box">
+                <ul class="footer-list">
+                  
+                    <p class="footer-list-title">Quick Links</p>
+                  
+                  <li>
+                    <a href="#" class="footer-link has-before">Our Services</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-link has-before">Meet Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-link has-before">Our Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-link has-before">Need A Career?</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-link has-before">News & Blog</a>
+                  </li>
+                </ul>
+                <ul class="footer-list">
+                  
+                    <p class="footer-list-title">Services</p>
+                  
+                  <li>
+                    <a href="#" class="footer-link has-before">Diesel</a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="footer-link has-before">Petrol</a>
+                  </li>
+      
+                </ul>
+      
+                <ul class="footer-list">
+      
+                 
+                 
+      
+                <ul class="footer-list">
+      
+                  
+                    <p class="footer-list-title">Contact Us</p>
+                  
+      
+                  <li class="footer-list-item">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+      
+                    <address class="contact-link">
+                      508 klarinet Emalahleni 1035
+                    </address>
+                  </li>
+      
+                  <li class="footer-list-item">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+      
+                    <a href="tel:+27 72 200 2639" class="contact-link">+27 72 200 2639</a>
+                  </li>
+      
+                  <li class="footer-list-item">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+      
+                    <span class="contact-link">Monday - Friday, 08 am - 17:30 pm</span>
+                  </li>
+      
+                  <li class="footer-list-item">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+      
+                    <a href="makhanyisamalapane@superslide.co.za" class="contact-link" >makhanyisamalapane@superslide.co.za</a>
+                  </li>
+      
+                </ul>
+      
+              </div>
+      
+            </div>
+      
+            <div class="footer-bottom" style="margin-left: auto;">
+              <p class="copyright">
+                &copy; 2025 <a href="#" class="copyright-link">DSI </a> <a href="" class="copyright-link" style="text-decoration: none;">&</a><a href="" class="copyright-link"> Highest TEC Programmers</a>. All Rights Reserved.
+              </p>
+            </div>
+      
+          </div>
+        </footer>
+      </section>
+      <script>
+          const menuBtn = document.querySelector('.menu-btn')
+          const navlinks = document.querySelector('.nav-links')
+      
+          menuBtn.addEventListener('click',()=>{
+              navlinks.classList.toggle('mobile-menu')
+          })
+      </script>
+      
+          
+        </body>
+      </html>
+      
