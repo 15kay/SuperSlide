@@ -43,8 +43,8 @@
           safety, and sustainability.
         </p>
         <div class="buttons">
-          <a href="#about" class="join">Learn More</a>
-          <a href="#contact" class="learn">Contact Us</a>
+          <a href="assest/about.html" class="join">Learn More</a>
+          <a href="assest/contact.html" class="learn">Contact Us</a>
         </div>
       </div>
       <div class="img">
@@ -98,7 +98,8 @@
           <li><strong>Reliable for All Vehicles:</strong> Consistent performance across all engines.</li>
       </ul>
       <br>
-      <button class="buy-now">Choose Petrol</button>
+      <button class="buy-now" onclick="contact()">Choose Petrol</button>
+
   </div>
 
   <!-- Diesel Card -->
@@ -111,7 +112,7 @@
           <li><strong>Enhanced Power for Heavy Loads:</strong> Ideal for trucks and machinery.</li>
           <li><strong>Low Emissions, High Efficiency:</strong> Keeps your engine efficient and eco-friendly.</li>
       </ul>
-      <button class="buy-now">Choose Diesel</button>
+      <button class="buy-now" onclick="contact()">Choose Diesel</button>
   </div>
 </div>
     
@@ -227,11 +228,10 @@
     menuBtn.addEventListener('click',()=>{
         navlinks.classList.toggle('mobile-menu')
     })
-  // Add an event listener to the button
-document.querySelector('.buy-now').addEventListener('click', function() {
-    // Redirect the page
+ function contact() {
     window.location.href = 'assets/contact.html';
-});
+}
+
 
 </script>
 
